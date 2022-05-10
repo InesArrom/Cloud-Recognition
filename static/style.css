@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#footer{ 
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    bottom: 0;
+}
+
+#header {
+  background: black;
+  color: white;
+  font-size: 30px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+}
+  
+#footer p, #header p{
+    margin:auto;
+    font-size: 16pt;
+    color:white;
+}
+
+html {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#error {
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  margin-top: -100px;
+}
+
+#msgError {
+  color:red;
+  text-align: center;
+  font-size: 16pt;
+}
+
+form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+  border: 2px dashed black;
+}
+
+form p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+}
+
+form p:hover {
+  cursor: pointer;
+}
+
+form input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+
+form button {
+  cursor: pointer;
+  margin: 0;
+  color: #fff;
+  background: #1250b3;
+  border: none;
+  width: 508px;
+  height: 50px;
+  font-size: 18px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #a4b2ce;
+  transition: all .2s ease;
+  outline: none;
+}
+
+form button:hover {
+  background: #2779b9;
+  color: white;
+}
+
+form button:active {
+  border: 0;
+}

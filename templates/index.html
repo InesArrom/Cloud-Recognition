@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Recongition Los del Fondos</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form input').change(function () {
+                $('form p').text(this.files.length + " imatge seleccionada");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <p>CLOUD RECOGNITION</ps>
+    </div>
+    <form action="/upload" method="POST" enctype="multipart/form-data" id="formulari">
+        <input type="file" name="archivo">
+        <p>Arrosega una imatge o clicka aqui.</p>
+        <button type="submit" id="botoEnviar">Enviar</button>
+    </form>
+    <div id="error">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p id="msgError">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    <footer id="footer">
+        <p>CLOUD RECOGNITION LOS DEL FONDO</p>
+    </footer>
+</body>
+</html>

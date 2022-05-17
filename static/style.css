@@ -128,15 +128,22 @@ form button:active {
 }
 
 .imatges {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 img {
   width: 400px;
   height: 400px;
+}
+
+.textAbaix {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20pt;
 }

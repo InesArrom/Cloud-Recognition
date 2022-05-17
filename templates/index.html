@@ -19,9 +19,9 @@
     </div>
     <form action="/upload" method="POST" enctype="multipart/form-data" id="formulari">
         <label for="x" class="labels">Introdueix la coordenada X</label>
-        <input type="number" name="x" class="inputs" id="x" min="0" max="1000" required>
+        <input type="number" name="x" class="inputs" id="x" min="0" max="999" required>
         <label for="y" class="labels">Introdueix la coordenada Y</label>
-        <input type="number" name="y" class="inputs" min="0" max="1000" id="y" required>
+        <input type="number" name="y" class="inputs" min="0" max="999" id="y" required>
         <input type="file" id="fileIn" name="archivo" required>
         <p>Arrosega una imatge o clicka aqui.</p>
         <button type="submit" id="botoEnviar">Enviar</button>
